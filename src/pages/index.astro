@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+
+const features = [
+  {
+    title: "Massive Data Analysis",
+    value: "21B+ Keywords",
+    description: "Access to over 21 billion keywords and 808 million domains for comprehensive SEO research"
+  },
+  {
+    title: "Annual Discount",
+    value: "Save 17%",
+    description: "Get the maximum authorized discount of 17% off when choosing annual plans"
+  },
+  {
+    title: "Free Trial Period",
+    value: "14 Days Free",
+    description: "Test all premium features with a risk-free 14-day trial period"
+  }
+];
+
+const pricingPlans = [
+  {
+    name: "Pro",
+    monthlyPrice: "$139.95",
+    annualPrice: "$117.33",
+    savings: "$271.44"
+  },
+  {
+    name: "Guru",
+    monthlyPrice: "$249.95",
+    annualPrice: "$208.33",
+    savings: "$499.44"
+  }
+];
+---
+
+<Layout 
+  title="Semrush Promo Code & Discount (Verified for 2024) - Save 17% + 14-Day Trial" 
+  description="🔥 Exclusive Semrush discount: Get 17% off + 14-day free trial. No coupon code needed. Trusted by 1,317+ users. Instant access to all premium features.">
+  
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Hero Section -->
+    <section class="text-center mb-16">
+      <div class="mb-4 text-green-600 font-semibold flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 bg-green-600 rounded-full"></span>
+        Verified Working • 👥 1,317 people have used this discount
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Semrush Promo Code & Discount
+        <span class="block text-gray-600 text-2xl mt-2">Verified for 2024</span>
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Last updated Nov. 13, 2024
+      </p>
+      <a href="https://semrush.sjv.io/bO36JB" 
+         class="inline-block bg-blue-600 text-white text-xl font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors">
+        Activate Semrush Discount
+      </a>
+      <p class="text-sm text-gray-500 mt-2">No coupon code needed - discount applied automatically</p>
+    </section>
+
+    <!-- How to Claim -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">How to Claim This Discount:</h2>
+      <ol class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">1</span>
+          <span>Click the activation button above</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">2</span>
+          <span>Create your account</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">3</span>
+          <span>Get instant access to all paid features</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="bg-blue-100 text-blue-600 font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0">4</span>
+          <span>Optional: Choose annual plan for 17% savings</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="grid md:grid-cols-3 gap-8 mb-16">
+      {features.map(feature => <FeatureCard {...feature} />)}
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">Semrush Discount Pricing Comparison</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead>
+            <tr class="border-b">
+              <th class="text-left py-4">Plan</th>
+              <th class="text-left py-4">Regular Price</th>
+              <th class="text-left py-4">With Annual Discount</th>
+              <th class="text-left py-4">You Save</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricingPlans.map(plan => (
+              <tr class="border-b">
+                <td class="py-4 font-semibold">{plan.name}</td>
+                <td class="py-4">{plan.monthlyPrice}/mo</td>
+                <td class="py-4">{plan.annualPrice}/mo</td>
+                <td class="py-4 text-green-600">{plan.savings}/year</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-bold mb-2">Do I need a coupon code?</h3>
+          <p class="text-gray-600">No, this discount is automatically applied when you use our link. No promo code needed.</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Is this the best available Semrush discount?</h3>
+          <p class="text-gray-600">Yes, this combines the maximum authorized discount (17% off annual plans) with the longest trial period (14 days).</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Can I cancel during the trial?</h3>
+          <p class="text-gray-600">Yes, cancel anytime during the 14-day trial with no charges.</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">How do I get the 17% discount?</h3>
+          <p class="text-gray-600">After your trial, simply choose an annual plan to automatically save 17%.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white rounded-lg p-8 mb-16 shadow-sm">
+      <h2 class="text-2xl font-bold mb-6">Unlock the Power of Semrush (Free for 14 Days)</h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="text-blue-600">✓</span>
+          <span><strong>Keyword Goldmine:</strong> Discover untapped, high-traffic keywords your competitors are missing</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-blue-600">✓</span>
+          <span><strong>Backlink Analysis:</strong> Uncover your site's link profile (and your competitors')</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-blue-600">✓</span>
+          <span><strong>Rank Tracking:</strong> Monitor your positions for crucial keywords</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-blue-600">✓</span>
+          <span><strong>Site Audit:</strong> Find and fix SEO issues holding you back</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-blue-600">✓</span>
+          <span><strong>Competitor Intelligence:</strong> Spy on your rivals' winning strategies</span>
+        </li>
+      </ul>
+      <p class="text-sm text-gray-500 mt-6">Note: This is Semrush's best available offer. No additional coupons or hidden discounts exist.</p>
+    </section>
+
+    <!-- CTA Bottom -->
+    <section class="text-center">
+      <a href="https://semrush.sjv.io/bO36JB" 
+         class="inline-block bg-blue-600 text-white text-xl font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors">
+        Activate Semrush Discount Now!
+      </a>
+      <p class="text-sm text-gray-500 mt-2">No credit card required • Cancel anytime</p>
+    </section>
+  </main>
+</Layout>
